@@ -1,6 +1,6 @@
 import React from "react"
 import { useParams } from "react-router-dom"
-import "../server2.js"
+import "../../../server2.js"
 
 export default function VanDetail() {
     const params = useParams()
