@@ -3,12 +3,15 @@ import { Routes, Route, Link } from "react-router-dom"
 import Home from "./component/Pages/Home"
 import About from "./component/Pages/About"
 import Vans from "./component/Pages/Vans/Vans"
-import VansDetail from "./component/Pages/Vans/VansDetail"
+import VansDetail from "./component/Pages/Vans/VanDetail"
 import Layout from "./component/Layout"
 import Dashboard from "../src/component/Pages/Host/Dashboard"
 import Income from "../src/component/Pages/Host/Income"
 import Reviews from "../src/component/Pages/Host/Reviews"
-import HostLayout from "./component/HostLayout";
+import HostVans from "../src/component/Pages/Host/HostVans"
+import HostVansDetail from "./component/Pages/Host/HostVanDetail"
+import HostLayout from "./component/HostLayout"
+
 //import ".server"
 
 
@@ -28,6 +31,8 @@ function App() {
             <Route index element={<Dashboard />} />
             <Route path="income" element={<Income />} />
             <Route path="reviews" element={<Reviews />} />
+            <Route path="vans" element={<HostVans />} />
+            <Route path="vans/:id" element={<HostVansDetail />} />
           </Route>
         </Route>
       </Routes>
